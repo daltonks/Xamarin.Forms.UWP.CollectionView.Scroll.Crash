@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace UWP.CollectionView.Scroll.Crash
@@ -22,7 +18,7 @@ namespace UWP.CollectionView.Scroll.Crash
         {
             var crashPage = new CrashPage();
             Application.Current.MainPage = crashPage;
-            crashPage.MakeVisibleAndScroll();
+            crashPage.Scroll();
         }
     }
 }

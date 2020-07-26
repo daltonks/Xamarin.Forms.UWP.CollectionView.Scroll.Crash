@@ -9,7 +9,6 @@
              x:DataType="crash:CrashPageViewModel">
 
     <CollectionView x:Name="CollectionView"
-                    IsVisible="{Binding IsVisible}"
                     ItemsSource="{Binding Strings}">
         <CollectionView.ItemTemplate>
             <DataTemplate x:DataType="x:String">

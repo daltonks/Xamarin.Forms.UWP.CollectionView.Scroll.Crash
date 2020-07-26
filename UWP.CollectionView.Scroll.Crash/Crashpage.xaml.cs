@@ -13,19 +13,17 @@ namespace UWP.CollectionView.Scroll.Crash
             InitializeComponent();
 
             var viewModel = new CrashPageViewModel();
-            BindingContext = viewModel;
             for (var i = 0; i < 100; i++)
             {
                 viewModel.Strings.Add(i.ToString());
             }
+
+            BindingContext = viewModel;
         }
 
-        private CrashPageViewModel ViewModel => (CrashPageViewModel) BindingContext;
-
-        public void MakeVisibleAndScroll()
+        public void Scroll()
         {
-            ViewModel.IsVisible = true;
-            CollectionView.ScrollTo(99, animate: false);
+            CollectionView.ScrollTo(99);
         }
     }
 }
